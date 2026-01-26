@@ -1,0 +1,164 @@
+﻿
+> ai_img_chat@0.1.0 dev
+> next dev
+
+   鈻?Next.js 15.5.4
+   - Local:        http://localhost:3000
+   - Network:      http://10.0.0.12:3000
+   - Environments: .env.local
+
+ 鉁?Starting...
+ 鉁?Ready in 2.8s
+ 鉁?Compiled /middleware in 312ms (224 modules)
+馃煝 [INFO] 2025-12-25T18:37:05.718Z [54zVUO-5Uls0uasA4vmTv] 鉃★笍 [GET] / { requestId: '54zVUO-5Uls0uasA4vmTv' }
+馃煝 [INFO] 2025-12-25T18:37:05.721Z [54zVUO-5Uls0uasA4vmTv] 猬咃笍 [GET] / - 3ms { requestId: '54zVUO-5Uls0uasA4vmTv' }
+ 鈼?Compiling / ...
+ 鉁?Compiled / in 2.1s (1647 modules)
+node.exe : Image with src "/images/mountain.jpg" has legacy prop "objectFit". Did 
+you forget to run the codemod?
+所在位置 D:\Program Files\nvm4w\nodejs\npm.ps1:29 字符: 3
++   & $NODE_EXE $NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Image with src ...un the codemod?:Stri 
+   ng) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/mountain.jpg" has legacy prop "layout". Did you forget to 
+run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/city.jpg" has legacy prop "layout". Did you forget to run 
+the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/city.jpg" has legacy prop "objectFit". Did you forget to 
+run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/desert.jpg" has legacy prop "layout". Did you forget to run 
+the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/desert.jpg" has legacy prop "objectFit". Did you forget to 
+run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/space.jpg" has legacy prop "layout". Did you forget to run 
+the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/space.jpg" has legacy prop "objectFit". Did you forget to 
+run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+馃煝 [INFO] 2025-12-25T18:37:11.362Z [MUbbOg56v5i4Uhq77YM8k] 鉃★笍 [GET] / { requestId: 'MUbbOg56v5i4Uhq77YM8k' }
+馃煝 [INFO] 2025-12-25T18:37:11.363Z [MUbbOg56v5i4Uhq77YM8k] 猬咃笍 [GET] / - 1ms { requestId: 'MUbbOg56v5i4Uhq77YM8k' }
+ GET / 200 in 275ms
+馃煝 [INFO] 2025-12-25T18:37:12.272Z [MaF96yXCJ1xI8oqJt-b0E] 鉃★笍 [POST] / { requestId: 'MaF96yXCJ1xI8oqJt-b0E' }
+馃煝 [INFO] 2025-12-25T18:37:12.272Z [MaF96yXCJ1xI8oqJt-b0E] 猬咃笍 [POST] / - 0ms { requestId: 'MaF96yXCJ1xI8oqJt-b0E' }
+ POST / 200 in 23ms
+馃煝 [INFO] 2025-12-25T18:37:12.349Z [XdMOGXNba_07XDFtInlLz] 鉃★笍 [POST] / { requestId: 'XdMOGXNba_07XDFtInlLz' }
+馃煝 [INFO] 2025-12-25T18:37:12.349Z [XdMOGXNba_07XDFtInlLz] 猬咃笍 [POST] / - 0ms { requestId: 'XdMOGXNba_07XDFtInlLz' }
+馃煛 Connecting to MongoDB...
+馃煝 MongoDB connection established.
+ POST / 200 in 2235ms
+馃煝 [INFO] 2025-12-25T18:37:14.617Z [niool_j-Eff0pUf-Hy4Lp] 鉃★笍 [POST] / { requestId: 'niool_j-Eff0pUf-Hy4Lp' }
+馃煝 [INFO] 2025-12-25T18:37:14.617Z [niool_j-Eff0pUf-Hy4Lp] 猬咃笍 [POST] / - 0ms { requestId: 'niool_j-Eff0pUf-Hy4Lp' }
+ POST / 200 in 180ms
+馃煝 [INFO] 2025-12-25T18:37:19.736Z [4qFomTzoJWuW34_GlbdC0] 鉃★笍 [GET] /buy-credits { requestId: '4qFomTzoJWuW34_GlbdC0' }
+馃煝 [INFO] 2025-12-25T18:37:19.737Z [4qFomTzoJWuW34_GlbdC0] 猬咃笍 [GET] /buy-credits - 1ms { requestId: '4qFomTzoJWuW34_GlbdC0' }
+ 鈼?Compiling /buy-credits ...
+ 鉁?Compiled /buy-credits in 681ms (1658 modules)
+ GET /buy-credits 200 in 869ms
+馃煝 [INFO] 2025-12-25T18:37:22.318Z [UMHAymCrHqMTu08GnFZCJ] 鉃★笍 [GET] /chat { requestId: 'UMHAymCrHqMTu08GnFZCJ' }
+馃煝 [INFO] 2025-12-25T18:37:22.318Z [UMHAymCrHqMTu08GnFZCJ] 猬咃笍 [GET] /chat - 0ms { requestId: 'UMHAymCrHqMTu08GnFZCJ' }
+ 鉁?Compiled /chat in 452ms (1665 modules)
+ GET /chat 200 in 558ms
+馃煝 [INFO] 2025-12-25T18:37:25.629Z [AoJJYeGLqLXHyO-NBDLKu] 鉃★笍 [POST] /api/chat { requestId: 'AoJJYeGLqLXHyO-NBDLKu' }
+馃煝 [INFO] 2025-12-25T18:37:25.629Z [AoJJYeGLqLXHyO-NBDLKu] 猬咃笍 [POST] /api/chat - 0ms { requestId: 'AoJJYeGLqLXHyO-NBDLKu' }
+ 鈼?Compiling /api/chat ...
+ 鉁?Compiled /api/chat in 862ms (1874 modules)
+馃煝 [INFO] 2025-12-25T18:37:26.840Z [7UVSqy3rWRBzMQjp6U9NO] 鉃★笍 POST /api/chat { requestId: '7UVSqy3rWRBzMQjp6U9NO' }
+馃煝 [INFO] 2025-12-25T18:37:26.958Z [7UVSqy3rWRBzMQjp6U9NO] 馃摡 Incoming chat request {
+  requestId: '7UVSqy3rWRBzMQjp6U9NO',
+  userId: 'user_34W7mAYX5nIRBSGINZXy3nxN2qw'
+}
+馃攳 [DEBUG] 2025-12-25T18:37:27.085Z [7UVSqy3rWRBzMQjp6U9NO] Cache hit { key: 'prompt:hi', requestId: '7UVSqy3rWRBzMQjp6U9NO' }
+馃煝 [INFO] 2025-12-25T18:37:27.086Z [7UVSqy3rWRBzMQjp6U9NO] [metric] chat.request {
+  requestId: '7UVSqy3rWRBzMQjp6U9NO',
+  userId: 'user_34W7mAYX5nIRBSGINZXy3nxN2qw',
+  status: 'success',
+  errorName: null,
+  providerRequested: 'gemini',
+  providerUsed: null,
+  fallbackUsed: false,
+  cached: true,
+  messageLength: 2,
+  messageHash: '8f434346648f',
+  totalMs: 127,
+  dbMs: 0,
+  cacheReadMs: 8,
+  creditMs: 0,
+  aiMs: 0,
+  cacheWriteMs: 0
+}
+ POST /api/chat 200 in 1458ms
+馃煝 [INFO] 2025-12-25T18:37:29.329Z [5o3AMX8sNVCdAb6L0XKNz] 鉃★笍 [GET] /chat { requestId: '5o3AMX8sNVCdAb6L0XKNz' }
+馃煝 [INFO] 2025-12-25T18:37:29.329Z [5o3AMX8sNVCdAb6L0XKNz] 猬咃笍 [GET] /chat - 0ms { requestId: '5o3AMX8sNVCdAb6L0XKNz' }
+ GET /chat 200 in 453ms
+馃煝 [INFO] 2025-12-25T18:37:30.212Z [UJl0o14CaDMOxzpbUG7XB] 鉃★笍 [POST] /chat { requestId: 'UJl0o14CaDMOxzpbUG7XB' }
+馃煝 [INFO] 2025-12-25T18:37:30.212Z [UJl0o14CaDMOxzpbUG7XB] 猬咃笍 [POST] /chat - 1ms { requestId: 'UJl0o14CaDMOxzpbUG7XB' }
+ POST /chat 200 in 49ms
+馃煝 [INFO] 2025-12-25T18:37:30.303Z [Mq7eZPGTtBHzPRLpjz3tx] 鉃★笍 [POST] /chat { requestId: 'Mq7eZPGTtBHzPRLpjz3tx' }
+馃煝 [INFO] 2025-12-25T18:37:30.303Z [Mq7eZPGTtBHzPRLpjz3tx] 猬咃笍 [POST] /chat - 0ms { requestId: 'Mq7eZPGTtBHzPRLpjz3tx' }
+ 鉁?Compiled /favicon.ico in 368ms (1444 modules)
+ GET /favicon.ico 200 in 720ms
+ POST /chat 200 in 1045ms
+馃煝 [INFO] 2025-12-25T18:37:31.387Z [15Qv9sLFOfcKciGNGbzqL] 鉃★笍 [POST] /chat { requestId: '15Qv9sLFOfcKciGNGbzqL' }
+馃煝 [INFO] 2025-12-25T18:37:31.387Z [15Qv9sLFOfcKciGNGbzqL] 猬咃笍 [POST] /chat - 0ms { requestId: '15Qv9sLFOfcKciGNGbzqL' }
+ POST /chat 200 in 190ms
+馃煝 [INFO] 2025-12-25T18:37:33.928Z [9h-Jn0I3s4sAIXOJvuoaG] 鉃★笍 [GET] / { requestId: '9h-Jn0I3s4sAIXOJvuoaG' }
+馃煝 [INFO] 2025-12-25T18:37:33.928Z [9h-Jn0I3s4sAIXOJvuoaG] 猬咃笍 [GET] / - 0ms { requestId: '9h-Jn0I3s4sAIXOJvuoaG' }
+ GET / 200 in 88ms
+馃煝 [INFO] 2025-12-25T18:37:51.278Z [9nzCL2beeFH5gR-er_epZ] 鉃★笍 [GET] / { requestId: '9nzCL2beeFH5gR-er_epZ' }
+馃煝 [INFO] 2025-12-25T18:37:51.278Z [9nzCL2beeFH5gR-er_epZ] 猬咃笍 [GET] / - 1ms { requestId: '9nzCL2beeFH5gR-er_epZ' }
+Image with src "/images/mountain.jpg" has legacy prop "objectFit". Did you forget 
+to run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/mountain.jpg" has legacy prop "layout". Did you forget to 
+run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/city.jpg" has legacy prop "layout". Did you forget to run 
+the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/city.jpg" has legacy prop "objectFit". Did you forget to 
+run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/desert.jpg" has legacy prop "layout". Did you forget to run 
+the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/desert.jpg" has legacy prop "objectFit". Did you forget to 
+run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/space.jpg" has legacy prop "layout". Did you forget to run 
+the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+Image with src "/images/space.jpg" has legacy prop "objectFit". Did you forget to 
+run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+ GET / 200 in 266ms
+ GET /favicon.ico 200 in 12ms
+馃煝 [INFO] 2025-12-25T18:37:51.963Z [7Jw_jRitQRg-x-3drMNCB] 鉃★笍 [POST] / { requestId: '7Jw_jRitQRg-x-3drMNCB' }
+馃煝 [INFO] 2025-12-25T18:37:51.963Z [7Jw_jRitQRg-x-3drMNCB] 猬咃笍 [POST] / - 0ms { requestId: '7Jw_jRitQRg-x-3drMNCB' }
+ POST / 200 in 18ms
+馃煝 [INFO] 2025-12-25T18:38:01.956Z [kxgLlNofMFXm7gHNRHCGm] 鉃★笍 [GET] / { requestId: 'kxgLlNofMFXm7gHNRHCGm' }
+馃煝 [INFO] 2025-12-25T18:38:01.956Z [kxgLlNofMFXm7gHNRHCGm] 猬咃笍 [GET] / - 0ms { requestId: 'kxgLlNofMFXm7gHNRHCGm' }
+ GET / 200 in 395ms
+馃煝 [INFO] 2025-12-25T18:38:02.783Z [m6H-juuGaC4SQkx2aAbdO] 鉃★笍 [POST] / { requestId: 'm6H-juuGaC4SQkx2aAbdO' }
+馃煝 [INFO] 2025-12-25T18:38:02.784Z [m6H-juuGaC4SQkx2aAbdO] 猬咃笍 [POST] / - 1ms { requestId: 'm6H-juuGaC4SQkx2aAbdO' }
+ POST / 200 in 17ms
+馃煝 [INFO] 2025-12-25T18:38:02.854Z [jTzmuNiXEN8-iMIV6NhUQ] 鉃★笍 [POST] / { requestId: 'jTzmuNiXEN8-iMIV6NhUQ' }
+馃煝 [INFO] 2025-12-25T18:38:02.854Z [jTzmuNiXEN8-iMIV6NhUQ] 猬咃笍 [POST] / - 0ms { requestId: 'jTzmuNiXEN8-iMIV6NhUQ' }
+ POST / 200 in 334ms
+馃煝 [INFO] 2025-12-25T18:38:03.219Z [_AxVTtG2UqcqTZGZynaKs] 鉃★笍 [POST] / { requestId: '_AxVTtG2UqcqTZGZynaKs' }
+馃煝 [INFO] 2025-12-25T18:38:03.219Z [_AxVTtG2UqcqTZGZynaKs] 猬咃笍 [POST] / - 0ms { requestId: '_AxVTtG2UqcqTZGZynaKs' }
+ POST / 200 in 192ms
+馃煝 [INFO] 2025-12-25T18:38:09.451Z [NJ-Z6GGz4En7B9tx8CwT4] 鉃★笍 [GET] /chat { requestId: 'NJ-Z6GGz4En7B9tx8CwT4' }
+馃煝 [INFO] 2025-12-25T18:38:09.451Z [NJ-Z6GGz4En7B9tx8CwT4] 猬咃笍 [GET] /chat - 0ms { requestId: 'NJ-Z6GGz4En7B9tx8CwT4' }
+ GET /chat 200 in 24ms
+馃煝 [INFO] 2025-12-25T18:38:27.516Z [A_PbvCjmKMYN34qXHfGO9] 鉃★笍 [GET] /.well-known/appspecific/com.chrome.devtools.json { requestId: 'A_PbvCjmKMYN34qXHfGO9' }
+馃煝 [INFO] 2025-12-25T18:38:27.516Z [A_PbvCjmKMYN34qXHfGO9] 猬咃笍 [GET] /.well-known/appspecific/com.chrome.devtools.json - 0ms { requestId: 'A_PbvCjmKMYN34qXHfGO9' }
