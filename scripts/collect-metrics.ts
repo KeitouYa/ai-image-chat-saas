@@ -10,7 +10,6 @@ import mongoose from "mongoose";
 import Credit from "@/src/models/credit.model";
 import User from "@/src/models/user.model";
 import Image from "@/src/models/image.model";
-import CostTracking from "@/src/models/cost-tracking.model";
 
 // Define CostTracking model if not already defined
 if (!mongoose.models.CostTracking) {
