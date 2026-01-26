@@ -226,5 +226,6 @@ if (require.main === module) {
   main();
 }
 
-export { runPerformanceTest, MetricsResult };
+export { runPerformanceTest };
+export type { MetricsResult };
 
