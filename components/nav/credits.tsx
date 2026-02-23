@@ -4,7 +4,6 @@ import { Coins } from "lucide-react";
 import { useImage } from "@/context/image";
 
 export default function Credits() {
-  const [total, setTotal] = React.useState(0);
   const { credits } = useImage(); // 等价于后面的写法： const credits = useImage().credits;
 
   const displayCredits = credits > 99 ? "99+" : credits.toString();

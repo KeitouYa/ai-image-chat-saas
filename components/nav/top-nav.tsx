@@ -12,7 +12,6 @@ import {
 
 import { LogIn, LaptopMinimal, Icon, LucideIcon, Bot } from "lucide-react";
 import { Toaster } from "react-hot-toast";
-import { currentUser } from "@clerk/nextjs/server";
 import ModeToggle from "./mode-toggle";
 import Credits from "./credits";
 
@@ -36,8 +35,7 @@ const IconWithText: React.FC<IconWithTextProps> = ({
   </Link>
 );
 
-export default async function TopNav() {
-  const user = await currentUser();
+export default function TopNav() {
 
   return (
     <div className="flex items-center justify-center p-5 shadow space-x-10">
@@ -57,17 +55,17 @@ export default async function TopNav() {
         </div>
 
         {/* //if login in, use IconWithText */}
-        {user && (
+        <SignedIn>
           <IconWithText
             href="/dashboard"
             icon={LaptopMinimal}
             text="Dashboard"
           />
-        )}
+        </SignedIn>
 
         <IconWithText href="/chat" icon={Bot} text="Chat" />
 
-        {user && (
+        <SignedIn>
           <div className="flex flex-col items-center cursor-pointer">
             <Link href="/buy-credits">
               <Credits />
@@ -76,7 +74,7 @@ export default async function TopNav() {
               Credits
             </span>
           </div>
-        )}
+        </SignedIn>
 
         <div className="flex flex-col items-center cursor-pointer">
           <SignedOut>

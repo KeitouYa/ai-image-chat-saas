@@ -24,7 +24,7 @@ export function GenerateImageInput() {
           className="p-6 lg:p-8 text-lg lg:text-2xl"
         />
         <Button
-          onClick={generateImage}
+          type="submit"
           disabled={loading}
           className="p-6 lg:p-8 text-lg lg:text-2xl 
           min-w-[200px] flex items-center justify-center"
