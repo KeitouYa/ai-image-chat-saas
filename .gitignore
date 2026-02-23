@@ -36,6 +36,7 @@ metrics*.log
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -55,3 +56,12 @@ next-env.d.ts
 # generated metrics
 *-performance-metrics.json
 metrics-report.json
+
+
+# local config
+.claudeignore
+/.claude/
+
+#sandbox
+/sandbox
+/test-demo
