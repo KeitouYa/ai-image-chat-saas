@@ -65,3 +65,5 @@ metrics-report.json
 #sandbox
 /sandbox
 /test-demo
+# Resume files
+.github/Resume*
