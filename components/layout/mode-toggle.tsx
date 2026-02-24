@@ -22,12 +22,12 @@ export default function ModeToggle() {
       variant="link"
       size="icon"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="w-9 h-9 rounded-full"
+      className="w-10 h-10 rounded-full"
     >
       {theme === "light" ? (
-        <Moon className="h-8 w-8 text-[#6a5acd]" />
+        <Moon className="h-10 w-10 text-primary" />
       ) : (
-        <Sun className="h-8 w-8 text-[#6a5acd]" />
+        <Sun className="h-10 w-10 text-primary" />
       )}
     </Button>
   );
