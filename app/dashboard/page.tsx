@@ -6,8 +6,8 @@ import { ImageType } from "@/src/types/image";
 import Link from "next/link";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
-import ImageCard from "@/components/cards/image-card";
-import Pagination from "@/components/nav/pagination";
+import ImageCard from "@/components/image/image-card";
+import Pagination from "@/components/layout/pagination";
 
 dayjs.extend(relativeTime);
 
@@ -33,14 +33,9 @@ export default async function Dashboard({ searchParams }: DashboardProps) {
   const totalPages = Math.ceil(totalCount / limit);
 
   return (
-    <div>
-      <div className="p-5 text-center">
-        <h1 className="text-2xl font-bold text-center">Images</h1>
-        <p>Your AI-Generated Image Collection</p>
-      </div>
-
-      {/* ⬇️ 修复了 className 的小拼写：md:grid-cols-2 */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div className="container max-w-7xl mx-auto py-8 px-4 md:px-8 flex flex-col gap-8">
+      {/* Image grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {images.map((image: ImageType) => (
           <Link key={image._id} href={`/dashboard/image/${image._id}`}>
             <ImageCard image={image} />
@@ -48,7 +43,7 @@ export default async function Dashboard({ searchParams }: DashboardProps) {
         ))}
       </div>
 
-      <div className="flex justify-center m-20">
+      <div className="flex justify-center mt-8">
         <Pagination page={pageNum} totalPages={totalPages} />
       </div>
     </div>

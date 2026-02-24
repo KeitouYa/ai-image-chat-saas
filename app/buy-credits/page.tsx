@@ -8,15 +8,24 @@ import toast from "react-hot-toast";
 import { saveCreditToDb } from "@/src/services/payment.service";
 
 import Loader from "@/components/ui/loader";
-import { useImage } from "@/context/image";
+import { useCredits } from "@/hooks/useCredits";
+import PaypalProvider from "@/context/paypal";
 
-export default function BuyCredits() {
+export default function BuyCreditsPage() {
+  return (
+    <PaypalProvider>
+      <BuyCredits />
+    </PaypalProvider>
+  );
+}
+
+function BuyCredits() {
   const [{ isPending }] = usePayPalScriptReducer();
 
   // 默认选项是第一个
   const [selected, setSelected] = React.useState({ credits: 10, price: 1 });
 
-  const { credits, getUserCredits } = useImage();
+  const { credits, getUserCredits } = useCredits();
 
   const creditOptions = [
     { credits: 10, price: 1 },
@@ -51,7 +60,7 @@ export default function BuyCredits() {
   }
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container max-w-7xl mx-auto p-4 md:p-8 flex items-center justify-center min-h-[calc(100dvh-100px)]">
       <Card className="w-full max-w-md mx-auto">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">
@@ -64,7 +73,7 @@ export default function BuyCredits() {
         </CardHeader>
 
         <CardContent>
-          <div className="flex flex-col gap-2 justify-between mb-6">
+          <div className="flex flex-col gap-3 mb-8">
             {/* 读取积分选项数据 */}
             {creditOptions.map((option) => (
               <Button
@@ -73,7 +82,7 @@ export default function BuyCredits() {
                 variant={
                   selected.credits === option.credits ? "default" : "outline"
                 }
-                className="h-10"
+                className={`h-14 text-lg transition-all ${selected.credits === option.credits ? 'ring-2 ring-primary ring-offset-2 ring-offset-background' : 'hover:border-primary/50'}`}
               >
                 {option.credits} Credits - ${option.price}
               </Button>

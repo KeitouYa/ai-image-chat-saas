@@ -29,8 +29,8 @@ const IconWithText: React.FC<IconWithTextProps> = ({
 }) => (
   <Link href={href}>
     <div className="flex flex-col items-center cursor-pointer">
-      <Icon className="h-10 w-10 text-[#6a6acd]" />
-      <span className="text-xs text-gray-500 mt-1 cursor-pointer">{text}</span>
+      <Icon className="h-10 w-10 text-primary" />
+      <span className="text-xs text-muted-foreground mt-1 cursor-pointer transition-colors hover:text-foreground">{text}</span>
     </div>
   </Link>
 );
@@ -38,7 +38,7 @@ const IconWithText: React.FC<IconWithTextProps> = ({
 export default function TopNav() {
 
   return (
-    <div className="flex items-center justify-center p-5 shadow space-x-10">
+    <div className="flex items-center justify-center p-4 border-b border-border bg-background/95 backdrop-blur z-50 sticky top-0 gap-8">
       <div className="flex items-center overflow-x-auto space-x-4 md:space-x-10">
         <div className="flex flex-col items-center cursor-pointer">
           <Link href="/">
@@ -49,7 +49,7 @@ export default function TopNav() {
               height={50}
             />
           </Link>
-          <span className="text-xs text-gray-500 mt-1 cursor-pointer hidden sm:inline-block">
+          <span className="text-xs text-muted-foreground mt-1 cursor-pointer hidden sm:inline-block transition-colors hover:text-foreground">
             AI Image Generator
           </span>
         </div>
@@ -70,7 +70,7 @@ export default function TopNav() {
             <Link href="/buy-credits">
               <Credits />
             </Link>
-            <span className="text-xs text-gray-500 mt-1 cursor-pointer">
+            <span className="text-xs text-muted-foreground mt-1 cursor-pointer transition-colors hover:text-foreground">
               Credits
             </span>
           </div>
@@ -79,21 +79,21 @@ export default function TopNav() {
         <div className="flex flex-col items-center cursor-pointer">
           <SignedOut>
             <SignInButton>
-              <LogIn className="h-10 w-10 text-[#6a5acd] cursor-pointer"></LogIn>
+              <LogIn className="h-10 w-10 text-primary cursor-pointer"></LogIn>
             </SignInButton>
           </SignedOut>
           <SignedIn>
-            <div className="text-xs text-gray-500 mt-1 cursor-pointer">
+            <div className="text-xs text-muted-foreground mt-1 cursor-pointer">
               <UserButton />
             </div>
           </SignedIn>
-          <span className="text-xs text-gray-500 mt-1 cursor-pointer">
+          <span className="text-xs text-muted-foreground mt-1 cursor-pointer transition-colors hover:text-foreground">
             Account
           </span>
         </div>
         <div className="flex flex-col items-center cursor-pointer">
           <ModeToggle />
-          <span className="text-xs text-gray-500 mt-1 cursor-pointer">
+          <span className="text-xs text-muted-foreground mt-1 cursor-pointer transition-colors hover:text-foreground">
             Theme
           </span>
         </div>

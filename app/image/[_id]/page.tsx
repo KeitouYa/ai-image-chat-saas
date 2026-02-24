@@ -1,7 +1,7 @@
 import React from "react";
 import { getImageFromDb } from "@/src/services/image.service";
 import Image from "next/image";
-import ImageCard from "@/components/cards/image-card";
+import ImageCard from "@/components/image/image-card";
 
 // ✅ 在 Next 15 中，PageProps 的 params 可能是 Promise，需要显式声明
 interface ImagePageProps {

@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import { Coins } from "lucide-react";
-import { useImage } from "@/context/image";
+import { useCredits } from "@/hooks/useCredits";
 
 export default function Credits() {
-  const { credits } = useImage(); // 等价于后面的写法： const credits = useImage().credits;
+  const { credits } = useCredits();
 
   const displayCredits = credits > 99 ? "99+" : credits.toString();
   const badgeColor = credits < 10 ? "bg-red-500" : "bg-green-500";

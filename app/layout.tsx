@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import TopNav from "@/components/nav/top-nav";
+import TopNav from "@/components/layout/top-nav";
 import { ClerkProvider } from "@clerk/nextjs";
-import { ImageProvider } from "@/context/image";
+import { CreditsProvider } from "@/context/credits";
+import { ImageGenerationProvider } from "@/context/image-generation";
 import { ThemeProvider } from "@/context/theme";
-import PaypalProvider from "@/context/paypal";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,18 +44,12 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <ImageProvider>
-              <PaypalProvider>
+            <CreditsProvider>
+              <ImageGenerationProvider>
                 <TopNav />
-                {/* 
-                  children: this is where the specific page content will be rendered
-                  For example:
-                  - When visiting /chat, chat/page.tsx will be rendered here
-                  - When visiting /dashboard, dashboard/page.tsx will be rendered here
-                */}
                 {children}
-              </PaypalProvider>
-            </ImageProvider>
+              </ImageGenerationProvider>
+            </CreditsProvider>
           </ThemeProvider>
         </body>
       </html>
