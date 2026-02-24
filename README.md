@@ -2,12 +2,12 @@
 
 A production-ready SaaS application featuring AI-powered image generation and intelligent chat, built with modern full-stack technologies and enterprise-grade architecture.
 
-![Next.js](https://img.shields.io/badge/Next.js-15.5-black?logo=next.js)
+![Next.js](https://img.shields.io/badge/Next.js-15.5.7-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
 ![MongoDB](https://img.shields.io/badge/MongoDB-8.0-green?logo=mongodb)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
 
-**Live Demo**: [https://ai-image-generator-chatbot.vercel.app/](https://ai-image-generator-chatbot.vercel.app/)
+**Live Demo**: [https://ai-image-chat-saas.vercel.app/](https://ai-image-chat-saas.vercel.app/)
 
 ## Technical Highlights
 
@@ -157,8 +157,8 @@ logger.info({ requestId, action: 'chat_request' });
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/ai-image-chat.git
-cd ai-image-chat
+git clone https://github.com/KeitouYa/ai-image-chat-saas.git
+cd ai-image-chat-saas
 npm install --legacy-peer-deps
 ```
 
