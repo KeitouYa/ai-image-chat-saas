@@ -33,7 +33,7 @@ export default function RootLayout({
     // Provider: Child components can use Clerk and Theme features
     <ClerkProvider>
       {/* ❗ DO NOT hardcode theme here */}
-      <html lang="en" suppressHydrationWarning>
+      <html lang="en" className="dark" suppressHydrationWarning>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
@@ -47,10 +47,10 @@ export default function RootLayout({
             {/* Background image layer */}
             {/* Light: blurred image + white overlay */}
             <div
-              className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-25 blur-[2px] dark:hidden"
+              className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-40 blur-[2px] dark:hidden"
               style={{ backgroundImage: "url('/images/00.jpg')" }}
             />
-            <div className="fixed inset-0 -z-10 bg-white/65 dark:hidden" />
+            <div className="fixed inset-0 -z-10 bg-white/40 dark:hidden" />
             {/* Dark: low opacity image + dark overlay */}
             <div className="fixed inset-0 -z-10 hidden dark:block">
               <div
