@@ -50,7 +50,7 @@ interface ThumbnailRowProps {
 
 const ThumbnailRow = ({ currentIndex, setCurrentIndex }: ThumbnailRowProps) => {
   return (
-    <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 flex bg-slate-100 bg-opacity-50 p-4 rounded-[20px] shadow-lg w-auto max-w-full space-x-5 overflow-x-auto">
+    <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 flex bg-slate-100/50 dark:bg-slate-800/50 p-4 rounded-[20px] shadow-lg w-auto max-w-full space-x-5 overflow-x-auto">
       {thumbnails.map((src, index) => (
         <div
           key={src}

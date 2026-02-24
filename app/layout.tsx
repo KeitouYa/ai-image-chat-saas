@@ -40,17 +40,17 @@ export default function RootLayout({
           {/* Theme must be resolved on the client */}
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
             {/* Background image layer */}
             {/* Light: blurred image + white overlay */}
             <div
-              className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-55 blur-[2px] dark:hidden"
+              className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-25 blur-[2px] dark:hidden"
               style={{ backgroundImage: "url('/images/00.jpg')" }}
             />
-            <div className="fixed inset-0 -z-10 bg-white/40 dark:hidden" />
+            <div className="fixed inset-0 -z-10 bg-white/65 dark:hidden" />
             {/* Dark: low opacity image + dark overlay */}
             <div className="fixed inset-0 -z-10 hidden dark:block">
               <div
