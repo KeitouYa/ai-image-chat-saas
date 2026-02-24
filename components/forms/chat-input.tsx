@@ -91,10 +91,12 @@ export function ChatInput({
           type="button"
           onClick={handleSubmit}
           disabled={disabled || loading || !hasContent}
+          aria-label="Send message"
           className={cn(
-            "shrink-0 h-8 w-8 rounded-full flex items-center justify-center transition-colors",
+            "shrink-0 h-10 w-10 rounded-full flex items-center justify-center transition-transform",
+            "transform will-change-transform",
             hasContent && !disabled && !loading
-              ? "bg-purple-600 text-white hover:bg-purple-700"
+              ? "bg-gradient-to-r from-purple-600 to-indigo-500 text-white shadow-md hover:scale-105 active:scale-95"
               : "bg-muted-foreground/20 text-muted-foreground cursor-not-allowed",
           )}
         >

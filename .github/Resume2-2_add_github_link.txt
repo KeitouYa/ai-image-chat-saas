@@ -1,0 +1,44 @@
+﻿Claire Wu
+SUMMARY
+MS in Information Systems candidate at Northeastern University with 2 years of full-stack development experience building CRM and SaaS products in React/TypeScript and Spring Boot/Node.js. Skilled in component design, performance optimization, and API development; shipped production systems with auth, payments, caching, and observability.
+EDUCATION
+Northeastern University                                                                                San Jose, CA
+Master of Science in Information Systems | GPA: 4.0                                           Expected May 2027
+Guangdong University of Technology                                                               Guangzhou, China
+Bachelor of Engineering in Computer Science and Technology | GPA: 3.7                                   June 2023
+TECHNICAL SKILLS
+Languages: TypeScript, JavaScript (ES6+), Java, Python, SQL
+Frontend: React, Next.js (App Router), React 19, Zustand, React Query, Tailwind CSS, Ant Design, Radix UI, shadcn/ui, Data Visualization, Performance Optimization
+Backend: Node.js, Spring Boot, Django REST Framework, RESTful API Design, Input Validation, Error Handling, JWT Authentication, Role-Based Access Control (RBAC)
+Databases & Caching: PostgreSQL, MongoDB, MySQL, Redis
+Async & System Design: Background Jobs, Task Queues (Celery), Caching Strategies, Concurrency Control, Idempotency
+Cloud & DevOps: AWS (S3, RDS, ElastiCache, ECS), Docker, Terraform, GitHub Actions (CI/CD), Vercel
+Observability & Reliability: Prometheus, Grafana, Sentry, Structured Logging, Monitoring & Alerting
+AI & Integrations: OpenAI API, Claude API, Gemini API, LLM Provider Abstraction, Prompt Caching, Clerk, PayPal, Cloudinary
+WORKING EXPERIENCE 
+Software Engineer (Full Stack) — Yicheng Wuyou Technology, Chengdu                    Jul 2023 – Mar 2025
+* Developed client-facing CRM and internal management tools for SMB clients using React, TypeScript and Spring Boot, serving 500+ daily active users.
+* Built frontend modules (customer list, sales dashboard, data visualization) with Ant Design; optimized table rendering for 10,000+ row datasets using virtual scrolling, improving LCP from ~3s to <1s.
+* Developed RESTful APIs using Spring Boot and MyBatis with input validation, error handling, and RBAC across 20+ endpoints; added Redis caching, reducing API response time from ~500ms to <100ms.
+* Implemented frontend error boundaries and Sentry logging; reduced crash rate by ~50% and enabled faster debugging in production.
+PROJECT EXPERIENCE
+Health Care Plan Generator                                                                     Aug 2025 - Oct 2025
+Tech: Python, Django REST Framework, React, TypeScript, PostgreSQL, Redis, Celery, Claude API, OpenAI API, Docker, Terraform, Prometheus, AWS
+* Built pharmacy care plan automation platform using Django REST Framework and React/TypeScript, generating clinical documents via LLM to reduce manual documentation workload
+* Implemented async task pipeline with Celery/Redis to handle LLM calls (10-30s latency) with failure recovery, reducing API response time to <300ms
+* Developed duplicate detection for patient/provider/order records with configurable warning vs blocking rules, preventing data quality issues in PostgreSQL
+* Created LLM provider abstraction isolating Claude/OpenAI dependencies, enabling runtime provider switching without code changes or redeployment
+* Integrated Prometheus/Grafana monitoring 15+ metrics; containerized 8 services with Docker and Terraform for  AWS deployment (RDS, ElastiCache, ECS)
+AI Image Generation & Chat SaaS Platform                                                   Mar 2025 – May 2025        
+Tech: TypeScript, Next.js 15, React 19, MongoDB, Redis, Clerk, PayPal | Full-Stack Engineer | Live    
+* Developed end-to-end AI chat feature with React chat UI (auto-scroll, loading states) and Node.js backend integrating Gemini/OpenAI APIs with 30s timeout and automatic provider failover
+* Built AI image generation flow from React form submission through Replicate API to Cloudinary storage and MongoDB persistence; displayed results in responsive image gallery with lazy loading
+* Implemented atomic credit billing using MongoDB findOneAndUpdate with $gte guards; validated with 1,000 concurrent request tests achieving zero over-deduction; synced balance to React Context for real-time UI updates
+* Created Redis caching layer (Upstash) achieving 100% cache hit rate; cache hits return in <127ms (P95) vs 1-2s for API calls, reducing per-user costs by ~90%
+* Integrated Clerk authentication protecting API routes; built PayPal checkout with 3 pricing tiers and optimistic UI updates for instant feedback
+EduNexus — Online Teaching Management Platform                                             Apr 2024 – Aug 2024
+Tech: React, TypeScript, Spring Boot, MySQL, AWS S3, Docker | Full-Stack Engineer
+* Built scalable React architecture with Zustand for global state and React Query for server-side data fetching, reducing duplicate UI/API logic by ~30% and accelerating feature development cycles.
+* Engineered secure authentication system with JWT refresh tokens and role-based authorization across 3 user types, protecting 40+ routes and endpoints.
+* Developed RESTful APIs with comprehensive validation and error handling for core features (courses, grading, attendance); integrated AWS S3 with signed URLs for file uploads (up to 50MB) to improve upload reliability.
+* Automated deployment using Docker containers and GitHub Actions CI/CD, reducing release time from ~30 minutes to under 5 minutes.
