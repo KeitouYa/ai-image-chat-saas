@@ -38,15 +38,15 @@ const IconWithText: React.FC<IconWithTextProps> = ({
 export default function TopNav() {
 
   return (
-    <div className="flex items-center justify-center p-4 border-b border-border bg-background/95 backdrop-blur z-50 sticky top-0 gap-8">
-      <div className="flex items-center overflow-x-auto space-x-4 md:space-x-10">
+    <div className="flex items-center justify-center p-4 border-b border-border backdrop-blur-md z-50 sticky top-0 gap-8">
+      <div className="flex items-end overflow-x-auto space-x-4 md:space-x-10">
         <div className="flex flex-col items-center cursor-pointer">
           <Link href="/">
             <Image
               src="/logos/logo.svg"
               alt="ai image generator logo"
-              width={50}
-              height={50}
+              width={40}
+              height={40}
             />
           </Link>
           <span className="text-xs text-muted-foreground mt-1 cursor-pointer hidden sm:inline-block transition-colors hover:text-foreground">

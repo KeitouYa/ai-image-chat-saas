@@ -50,7 +50,7 @@ export function ChatInput({
   return (
     <div
       className={cn(
-        "rounded-2xl border bg-muted/50 shadow-sm transition-all",
+        "rounded-2xl border shadow-sm transition-all dark:bg-muted/30",
         "focus-within:ring-1 focus-within:ring-ring",
         className
       )}
