@@ -50,9 +50,9 @@ export function ChatInput({
   return (
     <div
       className={cn(
-        "rounded-2xl border shadow-sm transition-all dark:bg-muted/30",
+        "rounded-2xl border shadow-sm transition-all bg-white/40 backdrop-blur-sm dark:bg-muted/30",
         "focus-within:ring-1 focus-within:ring-ring",
-        className
+        className,
       )}
     >
       {/* Textarea area */}
@@ -68,7 +68,7 @@ export function ChatInput({
           className={cn(
             "w-full border-0 bg-transparent dark:bg-transparent resize-none shadow-none",
             "focus-visible:ring-0 focus-visible:ring-offset-0",
-            size === "lg" ? "p-2 text-lg" : "p-1 text-sm"
+            size === "lg" ? "p-2 text-lg" : "p-1 text-sm",
           )}
         />
       </div>
@@ -95,7 +95,7 @@ export function ChatInput({
             "shrink-0 h-8 w-8 rounded-full flex items-center justify-center transition-colors",
             hasContent && !disabled && !loading
               ? "bg-purple-600 text-white hover:bg-purple-700"
-              : "bg-muted-foreground/20 text-muted-foreground cursor-not-allowed"
+              : "bg-muted-foreground/20 text-muted-foreground cursor-not-allowed",
           )}
         >
           {loading ? (

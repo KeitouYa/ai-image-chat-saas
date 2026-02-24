@@ -44,6 +44,22 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            {/* Background image layer */}
+            {/* Light: blurred image + white overlay */}
+            <div
+              className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-55 blur-[2px] dark:hidden"
+              style={{ backgroundImage: "url('/images/00.jpg')" }}
+            />
+            <div className="fixed inset-0 -z-10 bg-white/40 dark:hidden" />
+            {/* Dark: low opacity image + dark overlay */}
+            <div className="fixed inset-0 -z-10 hidden dark:block">
+              <div
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25 blur-[2px]"
+                style={{ backgroundImage: "url('/images/00.jpg')" }}
+              />
+              <div className="absolute inset-0 bg-black/40" />
+            </div>
+
             <CreditsProvider>
               <ImageGenerationProvider>
                 <TopNav />
