@@ -1,4 +1,4 @@
-# AI Image Generator & Chat Platform
+# GenCanvas AI - AI Image Generator & Chat Platform
 
 A production-ready SaaS application featuring AI-powered image generation and intelligent chat, built with modern full-stack technologies and enterprise-grade architecture.
 
